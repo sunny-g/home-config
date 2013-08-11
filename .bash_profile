@@ -6,3 +6,6 @@ export PATH
 PS1='\[\e[32;40m\][\u@\l]=======[\t]=======[\d]=======[\w]\n\[\e[30;42m\]\!>\[\e[0m\] ' 
 export PS1
 source ~/.bashrc
+
+EDITOR=vim
+export EDITOR
