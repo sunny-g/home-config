@@ -29,7 +29,7 @@ alias unflash="sudo umount -f /media/usb"
 alias sha1="openssl dgst -sha1"
 alias addport="sudo portmaster -g"
 
-alias gpush_pyot="git push https://github.com/sunny-g/PyOT.git"
+alias gpush_otpy="git push https://github.com/sunny-g/OTPy.git"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
 alias gitcam="git commit -am"
 
