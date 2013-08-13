@@ -31,5 +31,6 @@ alias addport="sudo portmaster -g"
 
 alias gpush_otpy="git push https://github.com/sunny-g/OTPy.git"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
+alias gpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
 alias gitcam="git commit -am"
 
