@@ -1,6 +1,8 @@
 " 
 set nomodeline
 
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
 " turns on syntax
 syntax on
 
@@ -24,7 +26,7 @@ set number
 
 " columns, width, wrapping
 set tw=80
-" set colorcolumn=80
+set colorcolumn=80
 
 " Toggle line numbers and fold column for easy copying:
 nnoremap <F3> :set nonumber! <CR> :set foldcolumn=0 <CR>
@@ -49,4 +51,3 @@ set mouse=a
 " sets the colorscheme
 colorscheme blink
 
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
