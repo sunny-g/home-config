@@ -1,8 +1,10 @@
 alias mic="sudo make install clean"
 alias lsa="ls -alG"
+alias grep="grep --color=auto"
 alias ..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
+alias .....="cd ../../../../"
 
 alias bcm="sudo kldload /boot/modules/bcmwl564_sys.ko"
 alias darknet="sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -D ndis -B && sudo dhclient wlan0"
@@ -33,4 +35,5 @@ alias gpush_otpy="git push https://github.com/sunny-g/OTPy.git"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
 alias gpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
 alias gitcam="git commit -am"
+alias gstat="git status"
 
