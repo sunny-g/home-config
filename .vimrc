@@ -51,3 +51,23 @@ set mouse=a
 " sets the colorscheme
 colorscheme blink
 
+" added from pfista's vimrc
+"""""""""""""""""""""""""""
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Required for Vundle
+Bundle 'gmarik/vundle'
+
+" All my bundles
+Bundle 'vim-scripts/DoxygenToolkit.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'Lokaltog/powerline'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+Bundle 'Lokaltog/vim-easymotion'
+
+
