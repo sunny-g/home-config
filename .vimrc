@@ -1,18 +1,26 @@
+" for Vundle
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
 " 
 set nomodeline
 
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 
 " turns on syntax
 syntax on
+syntax enable
 
 " ???
-filetype indent plugin on
+filetype plugin indent on
 
 " keeps indentation on
 set autoindent
 set smartindent
 set smarttab
+set cindent
 
 " wrapping and line breaks
 set wrap
@@ -51,23 +59,21 @@ set mouse=a
 " sets the colorscheme
 colorscheme blink
 
+" for pangloss/vim-javascript
+Bundle 'pangloss/vim-javascript'
+"set regexpengine=1 (may have to just run :set...)
+
 " added from pfista's vimrc
 """""""""""""""""""""""""""
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Required for Vundle
-Bundle 'gmarik/vundle'
-
 " All my bundles
-Bundle 'vim-scripts/DoxygenToolkit.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'Lokaltog/powerline'
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'vim-scripts/DoxygenToolkit.vim'
+"Bundle 'scrooloose/nerdcommenter'
+"Bundle 'scrooloose/nerdtree'
+"Bundle 'scrooloose/syntastic'
+"Bundle 'jistr/vim-nerdtree-tabs'
+"Bundle 'Lokaltog/powerline'
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"Bundle 'Lokaltog/vim-easymotion'
 
 

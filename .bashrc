@@ -6,6 +6,9 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 
+# for MAC ONLY
+#alias vim="Applications/MacVim.app/Contents/MacOS/Vim"
+
 alias bcm="sudo kldload /boot/modules/bcmwl564_sys.ko"
 alias darknet="sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -D ndis -B && sudo dhclient wlan0"
 alias bdhcp="sudo dhclient wlan0 && sudo ntpdate clock02.datx01.burst.net"
