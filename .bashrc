@@ -34,6 +34,8 @@ alias unflash="sudo umount -f /media/usb"
 alias sha1="openssl dgst -sha1"
 alias addport="sudo portmaster -g"
 
+alias dts2ac3="python /Applications/ConverterStuff/mkvdts2ac3.py/mkvdts2ac3.py"
+
 alias gpush_otpy="git push https://github.com/sunny-g/OTPy.git"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
 alias gpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
