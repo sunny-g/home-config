@@ -46,6 +46,10 @@ alias gpush_trust="git push https://github.com/pfista/Trust.git"
 alias gpull_trust="git pull https://github.com/pfista/Trust.git"
 alias gpush_learning="git push https://bitbucket.org/sunny-g/learning"
 alias gpull_learning="git pull https://bitbucket.org/sunny-g/learning"
+alias bpush_sqrl='git push https://bitbucket.org/sunny-g/sqrl-nmc'
+alias bpull_sqrl='git pull https://bitbucket.org/sunny-g/sqrl-nmc'
+alias gpush_sqrl='git push https://github.com/sunny-g/sqrl-nmc'
+alias gpull_sqrl='git pull https://github.com/sunny-g/sqrl-nmc'
 alias gitcam="git commit -am"
 alias gstat="git status"
 
