@@ -40,31 +40,21 @@ alias dts2ac3="python /Applications/ConverterStuff/mkvdts2ac3.py/mkvdts2ac3.py"
 
 alias gpush_otpy="git push https://github.com/sunny-g/OTPy.git"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
-<<<<<<< HEAD
 alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
 alias bpull_wufi="git pull https://bitbucket.org/sunny-g/wufi"
 alias gpush_trust="git push https://github.com/pfista/Trust.git"
 alias gpull_trust="git pull https://github.com/pfista/Trust.git"
 alias bpush_learning="git push https://bitbucket.org/sunny-g/learning"
 alias bpull_learning="git pull https://bitbucket.org/sunny-g/learning"
-alias gitcam="git commit -am"
-alias gstat="git status"
 
 alias emcc="~/gitdev/emscripten/emcc"
 alias em++="~/gitdev/emscripten/em++"
 alias emconfigure="~/gitdev/emscripten/emconfigure"
 
 export NODE_PATH=/usr/lib/node_modules
-=======
-alias gpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
-alias gpull_wufi="git pull https://bitbucket.org/sunny-g/wufi"
-alias gpush_trust="git push https://github.com/pfista/Trust.git"
-alias gpull_trust="git pull https://github.com/pfista/Trust.git"
-alias gpush_learning="git push https://bitbucket.org/sunny-g/learning"
-alias gpull_learning="git pull https://bitbucket.org/sunny-g/learning"
+
 alias bpush_otnodepy='git push https://bitbucket.org/sunny-g/otnodepy'
 alias bpull_otnodepy='git pull https://bitbucket.org/sunny-g/otnodepy'
 alias gitcam="git commit -am"
 alias gstat="git status"
 
->>>>>>> b7ded7f8f067e3e487796fef44e07f34ed11a828
