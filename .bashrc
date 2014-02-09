@@ -55,6 +55,8 @@ export NODE_PATH=/usr/lib/node_modules
 
 alias bpush_otnodepy='git push https://bitbucket.org/sunny-g/otnodepy'
 alias bpull_otnodepy='git pull https://bitbucket.org/sunny-g/otnodepy'
+alias bpush_shenku='git push https://bitbucket.org/sunny-g/shenku'
+alias bpull_shenku='git pull https://bitbucket.org/sunny-g/shenku'
 alias gitcam="git commit -am"
 alias gstat="git status"
 
