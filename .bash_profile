@@ -15,3 +15,4 @@ EDITOR=vim
 export EDITOR
 
 export PYTHON=/usr/local/bin/python
+export PATH=/usr/local/bin:$PATH
