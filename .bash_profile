@@ -16,4 +16,5 @@ export EDITOR
 
 export PYTHON=/usr/bin/python:/usr/local/bin/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$HOME/gitdev/go/bin:$PATH
+export GOPATH=$HOME/gitdev/gowork
