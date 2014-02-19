@@ -8,6 +8,7 @@ set nomodeline
 
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+au FileType go setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " turns on syntax
 syntax on
