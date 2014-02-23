@@ -58,7 +58,7 @@ set clipboard=unnamed
 set mouse=a 
 
 " sets the colorscheme
-colorscheme blink
+colorscheme vividchalk 
 
 " for pangloss/vim-javascript
 Bundle 'pangloss/vim-javascript'
