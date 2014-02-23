@@ -1,6 +1,4 @@
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
@@ -14,7 +12,7 @@ source ~/.bashrc2
 EDITOR=vim
 export EDITOR
 
-export PYTHON=/usr/bin/python:/usr/local/bin/python
+export PYTHON=/usr/bin/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
-export PATH=/usr/local/bin:$HOME/gitdev/go/bin:$PATH
+export PATH=/usr/local/bin:$HOME/gitdev/go/bin:$HOME/gitdev/gowork/bin:$PATH
 export GOPATH=$HOME/gitdev/gowork
