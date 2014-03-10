@@ -41,11 +41,8 @@ alias dts2ac3="python /Applications/ConverterStuff/mkvdts2ac3.py/mkvdts2ac3.py"
 alias gpush_otpy="git push https://github.com/sunny-g/OTPy.git"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
 alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
-alias bpull_wufi="git pull https://bitbucket.org/sunny-g/wufi"
 alias gpush_trust="git push https://github.com/pfista/Trust.git"
-alias gpull_trust="git pull https://github.com/pfista/Trust.git"
 alias bpush_learning="git push https://bitbucket.org/sunny-g/learning"
-alias bpull_learning="git pull https://bitbucket.org/sunny-g/learning"
 
 alias emcc="~/gitdev/emscripten/emcc"
 alias em++="~/gitdev/emscripten/em++"
@@ -54,9 +51,7 @@ alias emconfigure="~/gitdev/emscripten/emconfigure"
 export NODE_PATH=/usr/lib/node_modules
 
 alias bpush_otnodepy='git push https://bitbucket.org/sunny-g/otnodepy'
-alias bpull_otnodepy='git pull https://bitbucket.org/sunny-g/otnodepy'
 alias bpush_shenku='git push https://bitbucket.org/sunny-g/shenku'
-alias bpull_shenku='git pull https://bitbucket.org/sunny-g/shenku'
 alias gitcam="git commit -am"
 alias gstat="git status"
 
