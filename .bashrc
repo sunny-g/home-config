@@ -38,11 +38,9 @@ alias addport="sudo portmaster -g"
 
 alias dts2ac3="python /Applications/ConverterStuff/mkvdts2ac3.py/mkvdts2ac3.py"
 
-alias gpush_otpy="git push https://github.com/sunny-g/OTPy.git"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
 alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
-alias gpush_trust="git push https://github.com/pfista/Trust.git"
-alias bpush_learning="git push https://bitbucket.org/sunny-g/learning"
+alias gpush="git push"
 
 alias emcc="~/gitdev/emscripten/emcc"
 alias em++="~/gitdev/emscripten/em++"
