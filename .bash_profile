@@ -17,3 +17,6 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 export PATH=/usr/local/bin:$HOME/gitdev/go/bin:$HOME/gitdev/gowork/bin:$PATH
 export GOPATH=$HOME/gitdev/gowork:$HOME/gitdev/learning/go/progingo:$HOME/gitdev/learning/go/golang-book:$HOME/gitdev/learning/go/build-web-application-with-golang_EN:$HOME/gitdev/learning/go/talim-webapps
 
+export GITHUB=git@github.com
+export BBUCKET=git@bitbucket.org
+
