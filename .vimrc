@@ -1,83 +1,83 @@
-" for Vundle
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'gmarik/vundle'
+filetype off
+filetype plugin indent off
 
-" 
-set nomodeline
+set nocompatible
+set modeline
+set number
+set mouse=a
+set tw=80
+set colorcolumn=80
+set cursorline
 
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
-au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
-au FileType go setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
-
-" turns on syntax
-syntax on
-syntax enable
-
-" ???
-filetype plugin indent on
-
-" keeps indentation on
 set autoindent
 set smartindent
 set smarttab
 set cindent
-
-" wrapping and line breaks
+set clipboard=unnamed
+set backspace=eol,start,indent
 set wrap
 set linebreak
-
-" sets the background to dark so that the colors change accordingly
-set background=dark
-
-" turns on line numbers:
-set number
-
-" columns, width, wrapping
-set tw=80
-set colorcolumn=80
-
-" Toggle line numbers and fold column for easy copying:
-nnoremap <F3> :set nonumber! <CR> :set foldcolumn=0 <CR>
-
-" configure backspace
-set backspace=eol,start,indent
-
-" highlight search results
+" search stuff
 set hlsearch
-
-" make search act like in modern browsers (case insensitive)
 set incsearch
 set ignorecase
 set smartcase
 
-" makes copy/paste better
-set clipboard=unnamed
+set background=dark
+colorscheme molokai
+" let g:molokai_original = 1
+let g:rehash256 = 1
 
-" setting the mouse options
-set mouse=a 
+" required for Vundle
+set rtp+=$HOME/.vim/bundle/vundle
+call vundle#rc()
 
-" sets the colorscheme
-colorscheme blink 
+Plugin 'gmarik/vundle'
 
-" for pangloss/vim-javascript
-Bundle 'pangloss/vim-javascript'
-Bundle 'fatih/vim-go'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""" language-specific stuff """""""""""""""""
+
+" required for GOROOT/misc/vim stuff; includes everything
+filetype off
+set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+syntax enable
 
 
-"set regexpengine=1 (may have to just run :set...)
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Bundles and Plugins
+Plugin 'bling/vim-airline'
+set laststatus=2
+
+Plugin 'ervandew/supertab'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" establishes OmniComplete for all langs and fixes some issues
+set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" must be at end of .vimrc:
+" gofmt's .go files automatically when saved
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+autocmd FileType go compiler go
 
 " added from pfista's vimrc
-"""""""""""""""""""""""""""
-
-" All my bundles
-"Bundle 'vim-scripts/DoxygenToolkit.vim'
-"Bundle 'scrooloose/nerdcommenter'
-"Bundle 'scrooloose/nerdtree'
-"Bundle 'scrooloose/syntastic'
-"Bundle 'jistr/vim-nerdtree-tabs'
-"Bundle 'Lokaltog/powerline'
-"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-"Bundle 'Lokaltog/vim-easymotion'
-
-
+" """""""""""""""""""""""""""
+"
+" " All my bundles
+" "Bundle 'vim-scripts/DoxygenToolkit.vim'
+" "Bundle 'scrooloose/nerdcommenter'
+" "Bundle 'scrooloose/nerdtree'
+" "Bundle 'scrooloose/syntastic'
+" "Bundle 'jistr/vim-nerdtree-tabs'
+" "Bundle 'Lokaltog/powerline'
+" "set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+" "Bundle 'Lokaltog/vim-easymotion'
