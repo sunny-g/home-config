@@ -62,6 +62,9 @@ colorscheme blink
 
 " for pangloss/vim-javascript
 Bundle 'pangloss/vim-javascript'
+Bundle 'fatih/vim-go'
+
+
 "set regexpengine=1 (may have to just run :set...)
 
 " added from pfista's vimrc
