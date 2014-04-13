@@ -13,6 +13,12 @@ export EDITOR
 export PYTHON=/usr/bin/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 
+<<<<<<< HEAD
 export PATH=/usr/local/bin:$GOROOT/bin:$GOPATH/bin:$PATH
 
 source ~/.profile
+=======
+export GITHUB=git@github.com
+export BBUCKET=git@bitbucket.org
+
+>>>>>>> 9f3a566e887ef415bc066874b23bd68593a57abc
