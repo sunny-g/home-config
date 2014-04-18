@@ -62,8 +62,11 @@ Plugin 'nsf/gocode', {'rtp': 'vim/'}
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " establishes OmniComplete for all langs and fixes some issues
 set omnifunc=syntaxcomplete#Complete
-set completeopt-=preview
+set complete+=d
+set completeopt=menuone
+
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabDefaultCompletionType = "context"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " must be at end of .vimrc:
