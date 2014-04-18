@@ -1,0 +1,1 @@
+/home/sunnyg/gitdev/gowork/src/github.com/nsf/gocode/vim/autoload/gocomplete.vim
