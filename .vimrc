@@ -29,7 +29,7 @@ colorscheme molokai
 let g:rehash256 = 1
 
 " required for Vundle
-set rtp+=$HOME/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
@@ -47,6 +47,7 @@ syntax enable
 
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
+" au BufNewFile,BufRead,BufEnter *.go set omnifunc=gocomplete#Complete
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bundles and Plugins
@@ -56,6 +57,7 @@ set laststatus=2
 Plugin 'ervandew/supertab'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " establishes OmniComplete for all langs and fixes some issues
