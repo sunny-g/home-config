@@ -48,7 +48,6 @@ filetype plugin indent on
 syntax on
 syntax enable
 
-
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 " au BufNewFile,BufRead,BufEnter *.go set omnifunc=gocomplete#Complete
@@ -73,6 +72,7 @@ set completeopt=menuone
 
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " must be at end of .vimrc:
