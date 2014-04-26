@@ -48,12 +48,13 @@ filetype plugin indent on
 syntax on
 syntax enable
 
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 omnifunc=pythoncomplete#Complete
 au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 " au BufNewFile,BufRead,BufEnter *.go set omnifunc=gocomplete#Complete
 
 " fixes code folding and gofmt problems
 autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:Fmt\<esc>:loadview\<esc>`z"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bundles and Plugins
 Plugin 'bling/vim-airline'
@@ -63,8 +64,11 @@ Plugin 'ervandew/supertab'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'davidhalter/jedi-vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" omnifunc and supertab stuff
+
 " establishes OmniComplete for all langs and fixes some issues
 set omnifunc=syntaxcomplete#Complete
 set complete+=d
@@ -73,6 +77,19 @@ set completeopt=menuone
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
+" for the molokai colorscheme, changes the selected font
+highlight 	PmenuSel 	ctermfg=Black
+
+let g:jedi#auto_initialization = 1
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#popup_on_dot = 0
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_definitions_command = "<leader>d"
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-N>"
+let g:jedi#rename_command = "<leader>r"
+let g:jedi#show_call_signatures = "1"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " must be at end of .vimrc:
@@ -80,6 +97,7 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 autocmd FileType go compiler go
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " added from pfista's vimrc
 " """""""""""""""""""""""""""
 "
