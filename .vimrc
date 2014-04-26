@@ -22,11 +22,15 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+" code folding
+set foldmethod=syntax
 
 set background=dark
-colorscheme molokai
+set t_Co=256
+" molokai options
 " let g:molokai_original = 1
-let g:rehash256 = 1
+" let g:rehash256 = 1
+colorscheme molokai
 
 " required for Vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -49,6 +53,8 @@ au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 " au BufNewFile,BufRead,BufEnter *.go set omnifunc=gocomplete#Complete
 
+" fixes code folding and gofmt problems
+autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:Fmt\<esc>:loadview\<esc>`z"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bundles and Plugins
 Plugin 'bling/vim-airline'
