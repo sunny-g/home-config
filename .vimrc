@@ -49,6 +49,7 @@ syntax on
 syntax enable
 
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 omnifunc=pythoncomplete#Complete
+imap <C-p> <Esc>:w<CR>:!python %<CR>
 au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 " au BufNewFile,BufRead,BufEnter *.go set omnifunc=gocomplete#Complete
 
