@@ -13,7 +13,5 @@ export EDITOR
 export PYTHON=/usr/bin/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 
-export PATH=/usr/local/bin:$GOROOT/bin:$GOPATH/bin:$PATH
-
 source ~/.profile
 
