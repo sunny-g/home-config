@@ -46,10 +46,11 @@ alias emcc="~/gitdev/emscripten/emcc"
 alias em++="~/gitdev/emscripten/em++"
 alias emconfigure="~/gitdev/emscripten/emconfigure"
 
-export NODE_PATH=/usr/lib/node_modules
-
 alias bpush_otnodepy='git push https://bitbucket.org/sunny-g/otnodepy'
 alias bpush_shenku='git push https://bitbucket.org/sunny-g/shenku'
 alias gitcam="git commit -am"
 alias gstat="git status"
+
+alias gaelocalhost="dev_appserver.py --port 8080 ."
+alias gaeupdate="appcfg.py update ."
 

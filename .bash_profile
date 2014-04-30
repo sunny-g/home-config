@@ -12,6 +12,7 @@ export EDITOR
 
 export PYTHON=/usr/bin/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+export NODE_PATH=/usr/lib/node_modules
 
 source ~/.profile
 
