@@ -55,4 +55,5 @@ alias gaelocalhost="dev_appserver.py --port 8080 ."
 alias gaeupdate="appcfg.py update ."
 
 alias rippled="~/gitdev/rippled/build/rippled"
+alias cjdroute="~/gitdev/cjdns/cjdroute"
 
