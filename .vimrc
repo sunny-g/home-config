@@ -56,6 +56,8 @@ au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 " fixes code folding and gofmt problems
 autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:Fmt\<esc>:loadview\<esc>`z"
 
+au Bufread,BufNewFile *.pyj set filetype=rapydscript
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bundles and Plugins
 Plugin 'bling/vim-airline'
@@ -66,6 +68,7 @@ Plugin 'ervandew/supertab'
 " Plugin 
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'davidhalter/jedi-vim'
+Plugin 'atsepkov/vim-rapydscript'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " omnifunc and supertab stuff

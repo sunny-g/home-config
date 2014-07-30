@@ -26,7 +26,7 @@ set smartcase
 set foldmethod=syntax
 
 set background=dark
-set t_Co=256
+" set t_Co=256
 " molokai options
 " let g:molokai_original = 1
 " let g:rehash256 = 1
@@ -56,6 +56,8 @@ au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 " fixes code folding and gofmt problems
 autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:Fmt\<esc>:loadview\<esc>`z"
 
+au Bufread,BufNewFile *.pyj set filetype=rapydscript
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Bundles and Plugins
 Bundle 'bling/vim-airline'
@@ -66,6 +68,7 @@ Bundle 'ervandew/supertab'
 " Plugin 
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
 Bundle 'davidhalter/jedi-vim'
+Bundle 'atsepkov/vim-rapydscript'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " omnifunc and supertab stuff
