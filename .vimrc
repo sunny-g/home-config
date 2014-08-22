@@ -56,6 +56,7 @@ au FileType javascript setlocal tabstop=4 expandtab shiftwidth=2 softtabstop=2
 " fixes code folding and gofmt problems
 autocmd FileType go autocmd BufWritePre <buffer> execute "normal! mz:mkview\<esc>:Fmt\<esc>:loadview\<esc>`z"
 
+au FileType rapydscript setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 
 au Bufread,BufNewFile *.pyj set filetype=rapydscript
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
