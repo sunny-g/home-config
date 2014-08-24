@@ -53,4 +53,5 @@ alias gstat="git status"
 
 alias gaelocalhost="dev_appserver.py --port 8080 ."
 alias gaeupdate="appcfg.py update ."
+alias stellard="~/gitdev/stellard/build/stellard"
 
