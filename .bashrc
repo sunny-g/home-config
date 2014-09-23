@@ -45,7 +45,7 @@ alias gpush="git push"
 alias glog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias gcheck="git checkout"
 alias gdump="git cat-file -p"
-alias gitcm="git commit -m"
+alias gitc="git commit"
 alias gstat="git status"
 
 alias emcc="~/gitdev/emscripten/emcc"
