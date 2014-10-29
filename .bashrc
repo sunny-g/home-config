@@ -42,17 +42,23 @@ alias gpush_home="git push https://github.com/sunny-g/home-config.git"
 alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
 
 alias gpush="git push"
+alias gdiff="git diff"
 alias glog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias gcheck="git checkout"
 alias gdump="git cat-file -p"
 alias gitc="git commit"
 alias gstat="git status"
+alias gcat="git cat-file"
+alias gb="git branch"
 
 alias emcc="~/gitdev/emscripten/emcc"
 alias em++="~/gitdev/emscripten/em++"
 alias emconfigure="~/gitdev/emscripten/emconfigure"
 
+alias buildapk="meteor build .build/ --debug --directory"
+
 alias gaelocalhost="dev_appserver.py --port 8080 ."
 alias gaeupdate="appcfg.py update ."
+alias nodeserver="http-server"
 alias stellard="~/gitdev/stellard/build/stellard"
 

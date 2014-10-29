@@ -67,7 +67,7 @@ set laststatus=2
 Plugin 'ervandew/supertab'
 " Plugin 'scrooloose/nerdtree'
 " Plugin 
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+" Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'davidhalter/jedi-vim'
 Plugin 'atsepkov/vim-rapydscript'
 
