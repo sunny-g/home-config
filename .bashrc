@@ -1,3 +1,5 @@
+set -o vi
+
 alias mic="sudo make install clean"
 alias lsa="ls -alG"
 alias grep="grep --color=auto"
@@ -13,6 +15,7 @@ alias bcm="sudo kldload /boot/modules/bcmwl564_sys.ko"
 alias darknet="sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -D ndis -B && sudo dhclient wlan0"
 alias bdhcp="sudo dhclient wlan0 && sudo ntpdate clock02.datx01.burst.net"
 alias rewifi="sudo ifconfig wlan0 down && sudo ifconfig wlan0 up && sudo dhclient wlan0"
+alias cjd="sudo ~/gitdev/cjdns/cjdroute < ~/.cjdroute.conf"
 
 alias speak="sudo sysctl hw.snd.default_unit=0"
 alias shout="sudo sysctl hw.snd.default_unit=1"
@@ -41,6 +44,8 @@ alias dts2ac3="python /Applications/ConverterStuff/mkvdts2ac3.py/mkvdts2ac3.py"
 alias gpush_home="git push https://github.com/sunny-g/home-config.git"
 alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
 
+alias here="find . -type f -print0 | xargs -0"
+
 alias gpush="git push"
 alias gdiff="git diff"
 alias glog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
@@ -62,3 +67,5 @@ alias gaeupdate="appcfg.py update ."
 alias nodeserver="http-server"
 alias stellard="~/gitdev/stellard/build/stellard"
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
