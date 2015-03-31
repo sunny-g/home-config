@@ -1,4 +1,3 @@
-
 PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 
 # source ~/.git-prompt.sh
@@ -12,7 +11,10 @@ export EDITOR
 
 export PYTHON=/usr/bin/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
-export NODE_PATH=/usr/local/lib/node_modules:/usr/lib/node_modules
+# export NODE_PATH=/usr/local/lib/node_modules:/usr/lib/node_modules
+export NPM_PACKAGES=${HOME}/.npm-packages
+export NODE_PATH="${NPM_PACKAGES}/lib/node_modules:$NODE_PATH"
+PATH="$NPM_PACKAGES/bin:$PATH"
 
 source ~/.profile
 
