@@ -11,10 +11,15 @@ export EDITOR
 
 export PYTHON=/usr/bin/python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
-# export NODE_PATH=/usr/local/lib/node_modules:/usr/lib/node_modules
+
 export NPM_PACKAGES=${HOME}/.npm-packages
 export NODE_PATH="${NPM_PACKAGES}/lib/node_modules:$NODE_PATH"
-PATH="$NPM_PACKAGES/bin:$PATH"
 
+# installed golang with homebrew
+export GOROOT="/usr/local/opt/go/libexec"
+export GOOS="darwin"
+export GOARCH="amd64"
+export GOPATH="$HOME/gitdev/gowork"
+
+export PATH="$NPM_PACKAGES/bin:$GOROOT/bin:$GOPATH/bin:$PATH"
 source ~/.profile
-

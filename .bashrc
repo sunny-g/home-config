@@ -1,5 +1,8 @@
 set -o vi
 
+export NVM_DIR=~/.nvm
+source /usr/local/opt/nvm/nvm.sh
+
 alias mic="sudo make install clean"
 alias lsa="ls -alG"
 alias grep="grep --color=auto"
@@ -47,13 +50,14 @@ alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
 alias here="find . -type f -print0 | xargs -0"
 
 alias gpush="git push"
+alias gpull="git pull --rebase"
 alias gdiff="git diff"
 alias glog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias gcheck="git checkout"
 alias gdump="git cat-file -p"
-alias gitc="git commit"
-alias gstat="git status"
 alias gcat="git cat-file"
+alias gs="git status"
+alias gc="git commit"
 alias gb="git branch"
 
 alias emcc="~/gitdev/emscripten/emcc"
@@ -64,7 +68,6 @@ alias buildapk="meteor build .build/ --debug --directory"
 
 alias gaelocalhost="dev_appserver.py --port 8080 ."
 alias gaeupdate="appcfg.py update ."
-alias nodeserver="http-server"
 alias stellard="~/gitdev/stellard/build/stellard"
 
 ### Added by the Heroku Toolbelt
