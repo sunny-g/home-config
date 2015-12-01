@@ -3,13 +3,29 @@ set -o vi
 export NVM_DIR=~/.nvm
 source /usr/local/opt/nvm/nvm.sh
 
-alias mic="sudo make install clean"
+alias here="find . -type f -print0 | xargs -0"
 alias lsa="ls -alG"
 alias grep="grep --color=auto"
 alias ..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+alias blog="cd ~/Dropbox/blog/ghost/ && npm start"
+alias blog_deploy="cd ~/Dropbox/blog && buster generate --domain=http://localhost:2368 --dir=static && buster deploy"
+
+# git stuff
+alias gpush_home="git push https://github.com/sunny-g/home-config.git"
+alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
+alias gpush="git push"
+alias gpull="git pull --rebase"
+alias gdiff="git diff"
+alias glog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+alias gcheck="git checkout"
+alias gdump="git cat-file -p"
+alias gcat="git cat-file"
+alias gs="git status"
+alias gc="git commit"
+alias gb="git branch"
 
 # for MAC ONLY
 #alias vim="Applications/MacVim.app/Contents/MacOS/Vim"
@@ -44,25 +60,10 @@ alias addport="sudo portmaster -g"
 
 alias dts2ac3="python /Applications/ConverterStuff/mkvdts2ac3.py/mkvdts2ac3.py"
 
-alias gpush_home="git push https://github.com/sunny-g/home-config.git"
-alias bpush_wufi="git push https://bitbucket.org/sunny-g/wufi"
-
-alias here="find . -type f -print0 | xargs -0"
-
-alias gpush="git push"
-alias gpull="git pull --rebase"
-alias gdiff="git diff"
-alias glog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
-alias gcheck="git checkout"
-alias gdump="git cat-file -p"
-alias gcat="git cat-file"
-alias gs="git status"
-alias gc="git commit"
-alias gb="git branch"
-
 alias emcc="~/gitdev/emscripten/emcc"
 alias em++="~/gitdev/emscripten/em++"
 alias emconfigure="~/gitdev/emscripten/emconfigure"
+alias mic="sudo make install clean"
 
 alias buildapk="meteor build .build/ --debug --directory"
 

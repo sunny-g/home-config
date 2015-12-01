@@ -22,4 +22,11 @@ export GOARCH="amd64"
 export GOPATH="$HOME/gitdev/gowork"
 
 export PATH="$NPM_PACKAGES/bin:$GOROOT/bin:$GOPATH/bin:$PATH"
+
+# for jenv JVM mgmt
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# for custom scripts
+export PATH="$HOME/bin:$PATH"
 source ~/.profile
