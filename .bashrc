@@ -1,4 +1,4 @@
-set -o vi
+# set -o vi
 
 export NVM_DIR=~/.nvm
 source /usr/local/opt/nvm/nvm.sh
@@ -26,6 +26,19 @@ alias gcat="git cat-file"
 alias gs="git status"
 alias gc="git commit"
 alias gb="git branch"
+
+alias gs="git status"
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gch="git checkout"
+alias gp="git push"
+alias gpom="git push origin master"
+
+function gcheckstudent() {
+  git checkout -f $1
+  git pull
+}
 
 # for MAC ONLY
 #alias vim="Applications/MacVim.app/Contents/MacOS/Vim"
