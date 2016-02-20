@@ -1,4 +1,4 @@
-PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+PATH="${PATH}:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin"
 
 # source ~/.git-prompt.sh
 PS1='\[\e[32;40m\][\u@\l]=====[\t]=====[\d]=====[\w]\n\[\e[30;42m\]\!>\[\e[0m\] ' 
@@ -9,24 +9,24 @@ source ~/.bashrc
 EDITOR=vim
 export EDITOR
 
-export PYTHON=/usr/bin/python
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+export PYTHON="/usr/bin/python"
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
-export NPM_PACKAGES=${HOME}/.npm-packages
+export NPM_PACKAGES="${HOME}/.npm-packages"
 export NODE_PATH="${NPM_PACKAGES}/lib/node_modules:$NODE_PATH"
+export PATH="$PATH:$NPM_PACKAGES/bin"
 
 # installed golang with homebrew
 export GOROOT="/usr/local/opt/go/libexec"
 export GOOS="darwin"
 export GOARCH="amd64"
 export GOPATH="$HOME/gitdev/gowork"
-
-export PATH="$NPM_PACKAGES/bin:$GOROOT/bin:$GOPATH/bin:$PATH"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 # for jenv JVM mgmt
-export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$PATH:$HOME/.jenv/bin"
 eval "$(jenv init -)"
 
 # for custom scripts
-export PATH="$HOME/bin:$PATH"
+export PATH="$PATH:$HOME/bin"
 source ~/.profile
