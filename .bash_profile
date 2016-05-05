@@ -21,7 +21,8 @@ export GOROOT="/usr/local/opt/go/libexec"
 export GOOS="darwin"
 export GOARCH="amd64"
 export GOPATH="$HOME/gitdev/gowork"
-export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:$GOROOT/bin:$GOBIN"
 
 # for jenv JVM mgmt
 export PATH="$PATH:$HOME/.jenv/bin"
