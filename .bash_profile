@@ -31,3 +31,4 @@ eval "$(jenv init -)"
 # for custom scripts
 export PATH="$PATH:$HOME/bin:/usr/local/sbin"
 source ~/.profile
+

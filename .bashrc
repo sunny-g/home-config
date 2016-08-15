@@ -86,3 +86,6 @@ alias stellard="~/gitdev/stellard/build/stellard"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# burp proxy
+alias burp="java -jar -Xmx2048m ~/gitdev/breaker101/burpsuite_free_v1.6.32.jar"
